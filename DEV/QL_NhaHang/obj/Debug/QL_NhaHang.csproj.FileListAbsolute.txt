@@ -1,0 +1,13 @@
+c:\users\pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\bin\Debug\QL_NhaHang.exe.config
+c:\users\pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\bin\Debug\QL_NhaHang.exe
+c:\users\pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\bin\Debug\QL_NhaHang.pdb
+c:\users\pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.csprojResolveAssemblyReference.cache
+c:\users\pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.Properties.Resources.resources
+c:\users\pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.csproj.GenerateResource.Cache
+c:\users\pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.exe
+c:\users\pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.pdb
+C:\Users\Pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.TrangChu.resources
+C:\Users\Pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.DangNhap.resources
+C:\Users\Pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.QL.resources
+C:\Users\Pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.Order.resources
+C:\Users\Pheo\Documents\Visual Studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.frDatBan.resources
