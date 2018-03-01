@@ -52,22 +52,13 @@
             this.bt_Save = new System.Windows.Forms.Button();
             this.bt_Huy = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.qL_KHACHSANDataSet = new QL_NhaHang.QL_KHACHSANDataSet();
-            this.qLKHACHSANDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.qLKHACHSANDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qL_KHACHSANDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLKHACHSANDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLKHACHSANDataSetBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.DataSource = this.qLKHACHSANDataSetBindingSource;
+
             this.dataGridView1.Location = new System.Drawing.Point(12, 121);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(430, 478);
@@ -77,7 +68,7 @@
             // 
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.DataSource = this.qLKHACHSANDataSetBindingSource;
+
             this.dataGridView2.Location = new System.Drawing.Point(482, 121);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(302, 478);
@@ -298,21 +289,7 @@
             this.panel2.Size = new System.Drawing.Size(1042, 45);
             this.panel2.TabIndex = 22;
             // 
-            // qL_KHACHSANDataSet
-            // 
-            this.qL_KHACHSANDataSet.DataSetName = "QL_KHACHSANDataSet";
-            this.qL_KHACHSANDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // qLKHACHSANDataSetBindingSource
-            // 
-            this.qLKHACHSANDataSetBindingSource.DataSource = this.qL_KHACHSANDataSet;
-            this.qLKHACHSANDataSetBindingSource.Position = 0;
-            // 
-            // qLKHACHSANDataSetBindingSource1
-            // 
-            this.qLKHACHSANDataSetBindingSource1.DataSource = this.qL_KHACHSANDataSet;
-            this.qLKHACHSANDataSetBindingSource1.Position = 0;
-            // 
+            
             // Order
             // 
             this.AllowDrop = true;
@@ -335,9 +312,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qL_KHACHSANDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLKHACHSANDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLKHACHSANDataSetBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,8 +341,5 @@
         private System.Windows.Forms.Button bt_Save;
         private System.Windows.Forms.Button bt_Huy;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.BindingSource qLKHACHSANDataSetBindingSource;
-        private QL_KHACHSANDataSet qL_KHACHSANDataSet;
-        private System.Windows.Forms.BindingSource qLKHACHSANDataSetBindingSource1;
     }
 }

@@ -33,5 +33,16 @@ namespace QL_NhaHang.Properties {
                 return ((string)(this["QL_KHACHSANConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-Q2KRDSD\\SQLEXPRESS;Initial Catalog=QL_NHAHANG;Integrated Secu" +
+            "rity=True")]
+        public string QL_NHAHANGConnectionString {
+            get {
+                return ((string)(this["QL_NHAHANGConnectionString"]));
+            }
+        }
     }
 }

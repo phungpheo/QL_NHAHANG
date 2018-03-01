@@ -68,15 +68,10 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="QL_KHACHSANDataSet.Designer.cs">
+    <Compile Include="QL_NHAHANGDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>QL_KHACHSANDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="QL_KHACHSANDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QL_KHACHSANDataSet2.xsd</DependentUpon>
+      <DependentUpon>QL_NHAHANGDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="TrangChu.cs">
       <SubType>Form</SubType>
@@ -125,27 +120,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="QL_KHACHSANDataSet.xsc">
-      <DependentUpon>QL_KHACHSANDataSet.xsd</DependentUpon>
+    <None Include="QL_NHAHANGDataSet.xsc">
+      <DependentUpon>QL_NHAHANGDataSet.xsd</DependentUpon>
     </None>
-    <None Include="QL_KHACHSANDataSet.xsd">
+    <None Include="QL_NHAHANGDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QL_KHACHSANDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>QL_NHAHANGDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="QL_KHACHSANDataSet.xss">
-      <DependentUpon>QL_KHACHSANDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QL_KHACHSANDataSet2.xsc">
-      <DependentUpon>QL_KHACHSANDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="QL_KHACHSANDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QL_KHACHSANDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QL_KHACHSANDataSet2.xss">
-      <DependentUpon>QL_KHACHSANDataSet2.xsd</DependentUpon>
+    <None Include="QL_NHAHANGDataSet.xss">
+      <DependentUpon>QL_NHAHANGDataSet.xsd</DependentUpon>
     </None>
     <None Include="Resources\544c4bc75350f.image.jpg" />
   </ItemGroup>

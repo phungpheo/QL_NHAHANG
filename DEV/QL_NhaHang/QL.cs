@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QL_NhaHang
 {
@@ -15,6 +16,16 @@ namespace QL_NhaHang
         public QL()
         {
             InitializeComponent();
+        }
+
+        private void bt_MonAn_Click(object sender, EventArgs e)
+        {
+
+        }
+       
+        private void bt_NV_Click(object sender, EventArgs e)
+        {
+       
         }
     }
 }
