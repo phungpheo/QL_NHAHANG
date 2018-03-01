@@ -11,3 +11,19 @@ C:\Users\Pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\De
 C:\Users\Pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.QL.resources
 C:\Users\Pheo\documents\visual studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.Order.resources
 C:\Users\Pheo\Documents\Visual Studio 2013\Projects\QL_NhaHang\QL_NhaHang\obj\Debug\QL_NhaHang.frDatBan.resources
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\bin\Debug\QL_NhaHang.exe.config
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.exe
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.pdb
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\bin\Debug\QL_NhaHang.exe
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\bin\Debug\QL_NhaHang.pdb
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.csprojResolveAssemblyReference.cache
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.frDatBan.resources
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.Order.resources
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.DangNhap.resources
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.QL.resources
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.TrangChu.resources
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.Properties.Resources.resources
+F:\School\Kì 6\Thực tập CSDL\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.csproj.GenerateResource.Cache
+F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\bin\Debug\QL_NhaHang.exe.config
+F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.exe
+F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.pdb

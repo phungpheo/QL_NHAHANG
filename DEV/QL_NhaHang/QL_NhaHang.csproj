@@ -56,22 +56,32 @@
     <Compile Include="Order.Designer.cs">
       <DependentUpon>Order.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\QL.cs">
+    <Compile Include="QL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\QL.Designer.cs">
+    <Compile Include="QL.Designer.cs">
       <DependentUpon>QL.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\DangNhap.cs">
+    <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\DangNhap.Designer.cs">
+    <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\TrangChu.cs">
+    <Compile Include="QL_KHACHSANDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_KHACHSANDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_KHACHSANDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_KHACHSANDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\TrangChu.Designer.cs">
+    <Compile Include="TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -82,13 +92,13 @@
     <EmbeddedResource Include="Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\DangNhap.resx">
+    <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\QL.resx">
+    <EmbeddedResource Include="QL.resx">
       <DependentUpon>QL.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\TrangChu.resx">
+    <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -115,6 +125,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QL_KHACHSANDataSet.xsc">
+      <DependentUpon>QL_KHACHSANDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_KHACHSANDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_KHACHSANDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_KHACHSANDataSet.xss">
+      <DependentUpon>QL_KHACHSANDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_KHACHSANDataSet2.xsc">
+      <DependentUpon>QL_KHACHSANDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QL_KHACHSANDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_KHACHSANDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_KHACHSANDataSet2.xss">
+      <DependentUpon>QL_KHACHSANDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Resources\544c4bc75350f.image.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\IMG_5921.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -23,5 +23,17 @@ namespace QL_NhaHang
             this.Hide();
             tc.Show();
         }
+
+        private void bt_Huy_Click_1(object sender, EventArgs e)
+        {
+            TrangChu tc = new TrangChu();
+            this.Hide();
+            tc.Show();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
