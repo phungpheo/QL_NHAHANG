@@ -67,13 +67,14 @@
             // BT_GopBan
             // 
             this.BT_GopBan.AutoSize = true;
-            this.BT_GopBan.BackColor = System.Drawing.Color.Lime;
+            this.BT_GopBan.BackColor = System.Drawing.Color.YellowGreen;
             this.BT_GopBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_GopBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BT_GopBan.Location = new System.Drawing.Point(960, 324);
+            this.BT_GopBan.Location = new System.Drawing.Point(1095, 421);
             this.BT_GopBan.Name = "BT_GopBan";
             this.BT_GopBan.Size = new System.Drawing.Size(114, 75);
             this.BT_GopBan.TabIndex = 8;
+            this.BT_GopBan.Text = "Thanh Toán";
             this.BT_GopBan.UseVisualStyleBackColor = false;
             // 
             // bt_TachBan
@@ -82,7 +83,7 @@
             this.bt_TachBan.BackColor = System.Drawing.Color.Lime;
             this.bt_TachBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_TachBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_TachBan.Location = new System.Drawing.Point(1095, 324);
+            this.bt_TachBan.Location = new System.Drawing.Point(960, 327);
             this.bt_TachBan.Name = "bt_TachBan";
             this.bt_TachBan.Size = new System.Drawing.Size(114, 75);
             this.bt_TachBan.TabIndex = 7;
@@ -98,7 +99,7 @@
             this.bt_HuyDat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_HuyDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bt_HuyDat.ImageIndex = 16;
-            this.bt_HuyDat.Location = new System.Drawing.Point(1095, 421);
+            this.bt_HuyDat.Location = new System.Drawing.Point(1095, 327);
             this.bt_HuyDat.Name = "bt_HuyDat";
             this.bt_HuyDat.Size = new System.Drawing.Size(114, 75);
             this.bt_HuyDat.TabIndex = 6;

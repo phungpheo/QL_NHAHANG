@@ -129,6 +129,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DangNhap";
             this.Text = "Đăng Nhập";
+            this.Load += new System.EventHandler(this.DangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -25,7 +25,16 @@ namespace QL_NhaHang
        
         private void bt_NV_Click(object sender, EventArgs e)
         {
-       
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-Q2KRDSD\\SQLEXPRESS;Initial Catalog=QL_NHAHANG;Integrated Security=True");
+            SqlDataAdapter apt = new SqlDataAdapter("Select * from NhanVien", con);
+            DataTable tb = new DataTable();
+           // comand.CommandText = "";
+           // comand.Connection = con;
+            con.Open();
+            apt.Fill(tb);
+
+            
+            con.Close();
         }
     }
 }
