@@ -31,7 +31,6 @@ F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.csprojResolveAsse
 F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.frDatBan.resources
 F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.Order.resources
 F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.DangNhap.resources
-F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.QL.resources
 F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.TrangChu.resources
 F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.Properties.Resources.resources
 F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.csproj.GenerateResource.Cache

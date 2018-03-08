@@ -30,19 +30,22 @@ namespace QL_NhaHang
 
         private void button1_Click(object sender, EventArgs e)
         {
-             SqlConnection con =new SqlConnection("Data Source=DESKTOP-Q2KRDSD\\SQLEXPRESS;Initial Catalog=QL_NHAHANG;Integrated Security=True");
-             con.Open();
-           SqlDataAdapter sda=new SqlDataAdapter("Select Row from User where Ma='"+tb_MaDN+"'and Pass='"+tb_MK+"'",con);
-            DataTable dtUser=new DataTable();
-            sda.Fill(dtUser);
-            if (dtUser.Rows[0][0].ToString()=="1")
+            Connect cn = new Connect();
+            string user = tb_MaDN.Text.Trim();
+            string pass = tb_MK.Text.Trim();
+            SqlDataReader reader =cn.ExcuteReader("select Ma, Pass from [User] where Ma = '"+ user + "' and Pass = '" + pass + "' ");
+
+            if (reader.Read() == true)
             {
                 this.Hide();
                 TrangChu TrangChu =new TrangChu();
-                TrangChu.Show();
+                TrangChu.ShowDialog();
             }
-            else {
+            else 
+            {
                 MessageBox.Show("Your username or password is not correct!");
+                tb_MaDN.Clear();
+                tb_MK.Clear();
             }
 
             /*if ((tb_MaDN.Text == "1234") && (tb_MaDN.Text == "1234"))

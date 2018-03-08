@@ -35,9 +35,6 @@ namespace QL_NhaHang
 
         private void bt_QuanLy_Click(object sender, EventArgs e)
         {
-            QL ql = new QL();
-            this.Hide();
-            ql.Show();
            /* InitializeComponent();
             QL_NhaHang.View.uctQL uc = new View.uctQL();
             this.Controls.Add(uc);

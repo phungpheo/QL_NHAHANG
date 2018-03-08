@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="QL_NHAHANGDataSet" targetNamespace="http://tempuri.org/QL_NHAHANGDataSet.xsd" xmlns:mstns="http://tempuri.org/QL_NHAHANGDataSet.xsd" xmlns="http://tempuri.org/QL_NHAHANGDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QL_NHAHANGConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QL_NHAHANGConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QL_NhaHang.Properties.Settings.GlobalReference.Default.QL_NHAHANGConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QL_NHAHANGConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QL_NHAHANGConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QL_NhaHang.Properties.Settings.GlobalReference.Default.QL_NHAHANGConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BanTableAdapter" GeneratorDataComponentClassName="BanTableAdapter" Name="Ban" UserDataComponentName="BanTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QL_NHAHANGConnectionString (Settings)" DbObjectName="QL_NHAHANG.dbo.Ban" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="QL_NHAHANGConnectionString1 (Settings)" DbObjectName="QL_NHAHANG.dbo.Ban" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Ban] WHERE (([Tenban] = @Original_Tenban) AND ((@IsNull_TinhTrang = 1 AND [TinhTrang] IS NULL) OR ([TinhTrang] = @Original_TinhTrang)))</CommandText>
@@ -57,9 +57,73 @@ SELECT Tenban, TinhTrang FROM Ban WHERE (Tenban = @Tenban)</CommandText>
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UserTableAdapter" GeneratorDataComponentClassName="UserTableAdapter" Name="User" UserDataComponentName="UserTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QL_NHAHANGConnectionString1 (Settings)" DbObjectName="QL_NHAHANG.dbo.[User]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[User] WHERE (([Ma] = @Original_Ma) AND ((@IsNull_Ten = 1 AND [Ten] IS NULL) OR ([Ten] = @Original_Ten)) AND ((@IsNull_Pass = 1 AND [Pass] IS NULL) OR ([Pass] = @Original_Pass)) AND ((@IsNull_PhanQuyen = 1 AND [PhanQuyen] IS NULL) OR ([PhanQuyen] = @Original_PhanQuyen)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Ma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ma" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Ten" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Ten" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Ten" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Ten" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Pass" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Pass" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Pass" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pass" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PhanQuyen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PhanQuyen" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_PhanQuyen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PhanQuyen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[User] ([Ma], [Ten], [Pass], [PhanQuyen]) VALUES (@Ma, @Ten, @Pass, @PhanQuyen);
+SELECT Ma, Ten, Pass, PhanQuyen FROM [User] WHERE (Ma = @Ma)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Ma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ma" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Ten" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Ten" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Pass" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pass" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@PhanQuyen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PhanQuyen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Ma, Ten, Pass, PhanQuyen FROM dbo.[User]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[User] SET [Ma] = @Ma, [Ten] = @Ten, [Pass] = @Pass, [PhanQuyen] = @PhanQuyen WHERE (([Ma] = @Original_Ma) AND ((@IsNull_Ten = 1 AND [Ten] IS NULL) OR ([Ten] = @Original_Ten)) AND ((@IsNull_Pass = 1 AND [Pass] IS NULL) OR ([Pass] = @Original_Pass)) AND ((@IsNull_PhanQuyen = 1 AND [PhanQuyen] IS NULL) OR ([PhanQuyen] = @Original_PhanQuyen)));
+SELECT Ma, Ten, Pass, PhanQuyen FROM [User] WHERE (Ma = @Ma)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Ma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ma" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Ten" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Ten" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Pass" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pass" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@PhanQuyen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PhanQuyen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Ma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ma" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Ten" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Ten" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Ten" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Ten" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Pass" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Pass" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Pass" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pass" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PhanQuyen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PhanQuyen" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_PhanQuyen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PhanQuyen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Ma" DataSetColumn="Ma" />
+              <Mapping SourceColumn="Ten" DataSetColumn="Ten" />
+              <Mapping SourceColumn="Pass" DataSetColumn="Pass" />
+              <Mapping SourceColumn="PhanQuyen" DataSetColumn="PhanQuyen" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BanDatTableAdapter" GeneratorDataComponentClassName="BanDatTableAdapter" Name="BanDat" UserDataComponentName="BanDatTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QL_NHAHANGConnectionString (Settings)" DbObjectName="QL_NHAHANG.dbo.BanDat" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="QL_NHAHANGConnectionString1 (Settings)" DbObjectName="QL_NHAHANG.dbo.BanDat" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[BanDat] WHERE (([Tenban] = @Original_Tenban) AND ((@IsNull_TenKH = 1 AND [TenKH] IS NULL) OR ([TenKH] = @Original_TenKH)) AND ((@IsNull_SDT = 1 AND [SDT] IS NULL) OR ([SDT] = @Original_SDT)) AND ((@IsNull_Ngaydat = 1 AND [Ngaydat] IS NULL) OR ([Ngaydat] = @Original_Ngaydat)) AND ((@IsNull_GIoDen = 1 AND [GIoDen] IS NULL) OR ([GIoDen] = @Original_GIoDen)) AND ((@IsNull_GioDi = 1 AND [GioDi] IS NULL) OR ([GioDi] = @Original_GioDi)) AND ((@IsNull_TienCoc = 1 AND [TienCoc] IS NULL) OR ([TienCoc] = @Original_TienCoc)) AND ((@IsNull_MaNV = 1 AND [MaNV] IS NULL) OR ([MaNV] = @Original_MaNV)))</CommandText>
@@ -151,7 +215,7 @@ SELECT Tenban, TenKH, SDT, Ngaydat, GIoDen, GioDi, TienCoc, MaNV FROM BanDat WHE
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CTHDTableAdapter" GeneratorDataComponentClassName="CTHDTableAdapter" Name="CTHD" UserDataComponentName="CTHDTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QL_NHAHANGConnectionString (Settings)" DbObjectName="QL_NHAHANG.dbo.CTHD" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="QL_NHAHANGConnectionString1 (Settings)" DbObjectName="QL_NHAHANG.dbo.CTHD" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[CTHD] WHERE (([MaHD] = @Original_MaHD) AND ((@IsNull_MaPOD = 1 AND [MaPOD] IS NULL) OR ([MaPOD] = @Original_MaPOD)))</CommandText>
@@ -201,7 +265,7 @@ SELECT MaHD, MaPOD FROM CTHD WHERE (MaHD = @MaHD)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CTPODTableAdapter" GeneratorDataComponentClassName="CTPODTableAdapter" Name="CTPOD" UserDataComponentName="CTPODTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QL_NHAHANGConnectionString (Settings)" DbObjectName="QL_NHAHANG.dbo.CTPOD" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="QL_NHAHANGConnectionString1 (Settings)" DbObjectName="QL_NHAHANG.dbo.CTPOD" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[CTPOD] WHERE (([MaPOD] = @Original_MaPOD) AND ((@IsNull_MaMon = 1 AND [MaMon] IS NULL) OR ([MaMon] = @Original_MaMon)) AND ((@IsNull_SLMon = 1 AND [SLMon] IS NULL) OR ([SLMon] = @Original_SLMon)))</CommandText>
@@ -258,7 +322,7 @@ SELECT MaPOD, MaMon, SLMon FROM CTPOD WHERE (MaPOD = @MaPOD)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HoaDonTableAdapter" GeneratorDataComponentClassName="HoaDonTableAdapter" Name="HoaDon" UserDataComponentName="HoaDonTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QL_NHAHANGConnectionString (Settings)" DbObjectName="QL_NHAHANG.dbo.HoaDon" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="QL_NHAHANGConnectionString1 (Settings)" DbObjectName="QL_NHAHANG.dbo.HoaDon" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[HoaDon] WHERE (([MaHD] = @Original_MaHD) AND ((@IsNull_MaNV = 1 AND [MaNV] IS NULL) OR ([MaNV] = @Original_MaNV)) AND ((@IsNull_TenBan = 1 AND [TenBan] IS NULL) OR ([TenBan] = @Original_TenBan)) AND ((@IsNull_MaKH = 1 AND [MaKH] IS NULL) OR ([MaKH] = @Original_MaKH)) AND ((@IsNull_TongTien = 1 AND [TongTien] IS NULL) OR ([TongTien] = @Original_TongTien)) AND ((@IsNull_ThoiGian = 1 AND [ThoiGian] IS NULL) OR ([ThoiGian] = @Original_ThoiGian)))</CommandText>
@@ -336,7 +400,7 @@ SELECT MaHD, MaNV, TenBan, MaKH, TongTien, ThoiGian FROM HoaDon WHERE (MaHD = @M
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="KhachHangTableAdapter" GeneratorDataComponentClassName="KhachHangTableAdapter" Name="KhachHang" UserDataComponentName="KhachHangTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QL_NHAHANGConnectionString (Settings)" DbObjectName="QL_NHAHANG.dbo.KhachHang" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="QL_NHAHANGConnectionString1 (Settings)" DbObjectName="QL_NHAHANG.dbo.KhachHang" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[KhachHang] WHERE (([MaKH] = @Original_MaKH) AND ((@IsNull_TenKH = 1 AND [TenKH] IS NULL) OR ([TenKH] = @Original_TenKH)) AND ((@IsNull_SDT = 1 AND [SDT] IS NULL) OR ([SDT] = @Original_SDT)) AND ((@IsNull_DiaChi = 1 AND [DiaChi] IS NULL) OR ([DiaChi] = @Original_DiaChi)))</CommandText>
@@ -400,49 +464,55 @@ SELECT MaKH, TenKH, SDT, DiaChi FROM KhachHang WHERE (MaKH = @MaKH)</CommandText
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MonAnTableAdapter" GeneratorDataComponentClassName="MonAnTableAdapter" Name="MonAn" UserDataComponentName="MonAnTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QL_NHAHANGConnectionString (Settings)" DbObjectName="QL_NHAHANG.dbo.MonAn" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="QL_NHAHANGConnectionString1 (Settings)" DbObjectName="QL_NHAHANG.dbo.MonAn" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM [dbo].[MonAn] WHERE (([MaMon] = @Original_MaMon) AND ((@IsNull_TenMon = 1 AND [TenMon] IS NULL) OR ([TenMon] = @Original_TenMon)) AND ((@IsNull_Gia = 1 AND [Gia] IS NULL) OR ([Gia] = @Original_Gia)))</CommandText>
+                    <CommandText>DELETE FROM [dbo].[MonAn] WHERE (([MaMon] = @Original_MaMon) AND ((@IsNull_TenMon = 1 AND [TenMon] IS NULL) OR ([TenMon] = @Original_TenMon)) AND ((@IsNull_Gia = 1 AND [Gia] IS NULL) OR ([Gia] = @Original_Gia)) AND ((@IsNull_LoaiMonAn = 1 AND [LoaiMonAn] IS NULL) OR ([LoaiMonAn] = @Original_LoaiMonAn)))</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_MaMon" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaMon" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TenMon" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TenMon" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TenMon" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TenMon" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Gia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Gia" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Gia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Gia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_LoaiMonAn" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LoaiMonAn" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_LoaiMonAn" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LoaiMonAn" SourceColumnNullMapping="false" SourceVersion="Original" />
                     </Parameters>
                   </DbCommand>
                 </DeleteCommand>
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO [dbo].[MonAn] ([MaMon], [TenMon], [Gia]) VALUES (@MaMon, @TenMon, @Gia);
-SELECT MaMon, TenMon, Gia FROM MonAn WHERE (MaMon = @MaMon)</CommandText>
+                    <CommandText>INSERT INTO [dbo].[MonAn] ([MaMon], [TenMon], [Gia], [LoaiMonAn]) VALUES (@MaMon, @TenMon, @Gia, @LoaiMonAn);
+SELECT MaMon, TenMon, Gia, LoaiMonAn FROM MonAn WHERE (MaMon = @MaMon)</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@MaMon" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaMon" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TenMon" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TenMon" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Gia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Gia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LoaiMonAn" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LoaiMonAn" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT MaMon, TenMon, Gia FROM dbo.MonAn</CommandText>
+                    <CommandText>SELECT MaMon, TenMon, Gia, LoaiMonAn FROM dbo.MonAn</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE [dbo].[MonAn] SET [MaMon] = @MaMon, [TenMon] = @TenMon, [Gia] = @Gia WHERE (([MaMon] = @Original_MaMon) AND ((@IsNull_TenMon = 1 AND [TenMon] IS NULL) OR ([TenMon] = @Original_TenMon)) AND ((@IsNull_Gia = 1 AND [Gia] IS NULL) OR ([Gia] = @Original_Gia)));
-SELECT MaMon, TenMon, Gia FROM MonAn WHERE (MaMon = @MaMon)</CommandText>
+                    <CommandText>UPDATE [dbo].[MonAn] SET [MaMon] = @MaMon, [TenMon] = @TenMon, [Gia] = @Gia, [LoaiMonAn] = @LoaiMonAn WHERE (([MaMon] = @Original_MaMon) AND ((@IsNull_TenMon = 1 AND [TenMon] IS NULL) OR ([TenMon] = @Original_TenMon)) AND ((@IsNull_Gia = 1 AND [Gia] IS NULL) OR ([Gia] = @Original_Gia)) AND ((@IsNull_LoaiMonAn = 1 AND [LoaiMonAn] IS NULL) OR ([LoaiMonAn] = @Original_LoaiMonAn)));
+SELECT MaMon, TenMon, Gia, LoaiMonAn FROM MonAn WHERE (MaMon = @MaMon)</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@MaMon" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaMon" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TenMon" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TenMon" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Gia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Gia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LoaiMonAn" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LoaiMonAn" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_MaMon" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="MaMon" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TenMon" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TenMon" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TenMon" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TenMon" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Gia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Gia" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Gia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Gia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_LoaiMonAn" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LoaiMonAn" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_LoaiMonAn" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LoaiMonAn" SourceColumnNullMapping="false" SourceVersion="Original" />
                     </Parameters>
                   </DbCommand>
                 </UpdateCommand>
@@ -452,12 +522,13 @@ SELECT MaMon, TenMon, Gia FROM MonAn WHERE (MaMon = @MaMon)</CommandText>
               <Mapping SourceColumn="MaMon" DataSetColumn="MaMon" />
               <Mapping SourceColumn="TenMon" DataSetColumn="TenMon" />
               <Mapping SourceColumn="Gia" DataSetColumn="Gia" />
+              <Mapping SourceColumn="LoaiMonAn" DataSetColumn="LoaiMonAn" />
             </Mappings>
             <Sources />
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PhieuOrderTableAdapter" GeneratorDataComponentClassName="PhieuOrderTableAdapter" Name="PhieuOrder" UserDataComponentName="PhieuOrderTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QL_NHAHANGConnectionString (Settings)" DbObjectName="QL_NHAHANG.dbo.PhieuOrder" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="QL_NHAHANGConnectionString1 (Settings)" DbObjectName="QL_NHAHANG.dbo.PhieuOrder" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[PhieuOrder] WHERE (([MaPOD] = @Original_MaPOD) AND ((@IsNull_TenBan = 1 AND [TenBan] IS NULL) OR ([TenBan] = @Original_TenBan)) AND ((@IsNull_MaNV = 1 AND [MaNV] IS NULL) OR ([MaNV] = @Original_MaNV)) AND ((@IsNull_Ngaygio = 1 AND [Ngaygio] IS NULL) OR ([Ngaygio] = @Original_Ngaygio)))</CommandText>
@@ -519,76 +590,12 @@ SELECT MaPOD, TenBan, MaNV, Ngaygio FROM PhieuOrder WHERE (MaPOD = @MaPOD)</Comm
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UserTableAdapter" GeneratorDataComponentClassName="UserTableAdapter" Name="User" UserDataComponentName="UserTableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="QL_NHAHANGConnectionString (Settings)" DbObjectName="QL_NHAHANG.dbo.[User]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <DeleteCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM [dbo].[User] WHERE (([Ma] = @Original_Ma) AND ((@IsNull_Ten = 1 AND [Ten] IS NULL) OR ([Ten] = @Original_Ten)) AND ((@IsNull_Pass = 1 AND [Pass] IS NULL) OR ([Pass] = @Original_Pass)) AND ((@IsNull_PhanQuyen = 1 AND [PhanQuyen] IS NULL) OR ([PhanQuyen] = @Original_PhanQuyen)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Ma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ma" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Ten" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Ten" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Ten" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Ten" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Pass" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Pass" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Pass" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pass" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PhanQuyen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PhanQuyen" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_PhanQuyen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PhanQuyen" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </DeleteCommand>
-                <InsertCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO [dbo].[User] ([Ma], [Ten], [Pass], [PhanQuyen]) VALUES (@Ma, @Ten, @Pass, @PhanQuyen);
-SELECT Ma, Ten, Pass, PhanQuyen FROM [User] WHERE (Ma = @Ma)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Ma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ma" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Ten" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Ten" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Pass" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pass" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@PhanQuyen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PhanQuyen" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </InsertCommand>
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT Ma, Ten, Pass, PhanQuyen FROM dbo.[User]</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-                <UpdateCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE [dbo].[User] SET [Ma] = @Ma, [Ten] = @Ten, [Pass] = @Pass, [PhanQuyen] = @PhanQuyen WHERE (([Ma] = @Original_Ma) AND ((@IsNull_Ten = 1 AND [Ten] IS NULL) OR ([Ten] = @Original_Ten)) AND ((@IsNull_Pass = 1 AND [Pass] IS NULL) OR ([Pass] = @Original_Pass)) AND ((@IsNull_PhanQuyen = 1 AND [PhanQuyen] IS NULL) OR ([PhanQuyen] = @Original_PhanQuyen)));
-SELECT Ma, Ten, Pass, PhanQuyen FROM [User] WHERE (Ma = @Ma)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Ma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ma" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Ten" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Ten" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Pass" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pass" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@PhanQuyen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PhanQuyen" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Ma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ma" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Ten" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Ten" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Ten" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Ten" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Pass" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Pass" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Pass" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pass" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PhanQuyen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PhanQuyen" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_PhanQuyen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PhanQuyen" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </UpdateCommand>
-              </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="Ma" DataSetColumn="Ma" />
-              <Mapping SourceColumn="Ten" DataSetColumn="Ten" />
-              <Mapping SourceColumn="Pass" DataSetColumn="Pass" />
-              <Mapping SourceColumn="PhanQuyen" DataSetColumn="PhanQuyen" />
-            </Mappings>
-            <Sources />
-          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="QL_NHAHANGDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QL_NHAHANGDataSet" msprop:Generator_UserDSName="QL_NHAHANGDataSet">
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="Ban" msprop:Generator_TableClassName="BanDataTable" msprop:Generator_TableVarName="tableBan" msprop:Generator_TablePropName="Ban" msprop:Generator_RowDeletingName="BanRowDeleting" msprop:Generator_RowChangingName="BanRowChanging" msprop:Generator_RowEvHandlerName="BanRowChangeEventHandler" msprop:Generator_RowDeletedName="BanRowDeleted" msprop:Generator_UserTableName="Ban" msprop:Generator_RowChangedName="BanRowChanged" msprop:Generator_RowEvArgName="BanRowChangeEvent" msprop:Generator_RowClassName="BanRow">
@@ -602,6 +609,34 @@ SELECT Ma, Ten, Pass, PhanQuyen FROM [User] WHERE (Ma = @Ma)</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="User" msprop:Generator_TableClassName="UserDataTable" msprop:Generator_TableVarName="tableUser" msprop:Generator_TablePropName="User" msprop:Generator_RowDeletingName="UserRowDeleting" msprop:Generator_RowChangingName="UserRowChanging" msprop:Generator_RowEvHandlerName="UserRowChangeEventHandler" msprop:Generator_RowDeletedName="UserRowDeleted" msprop:Generator_UserTableName="User" msprop:Generator_RowChangedName="UserRowChanged" msprop:Generator_RowEvArgName="UserRowChangeEvent" msprop:Generator_RowClassName="UserRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ma" msprop:Generator_ColumnVarNameInTable="columnMa" msprop:Generator_ColumnPropNameInRow="Ma" msprop:Generator_ColumnPropNameInTable="MaColumn" msprop:Generator_UserColumnName="Ma">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ten" msprop:Generator_ColumnVarNameInTable="columnTen" msprop:Generator_ColumnPropNameInRow="Ten" msprop:Generator_ColumnPropNameInTable="TenColumn" msprop:Generator_UserColumnName="Ten" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pass" msprop:Generator_ColumnVarNameInTable="columnPass" msprop:Generator_ColumnPropNameInRow="Pass" msprop:Generator_ColumnPropNameInTable="PassColumn" msprop:Generator_UserColumnName="Pass" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PhanQuyen" msprop:Generator_ColumnVarNameInTable="columnPhanQuyen" msprop:Generator_ColumnPropNameInRow="PhanQuyen" msprop:Generator_ColumnPropNameInTable="PhanQuyenColumn" msprop:Generator_UserColumnName="PhanQuyen" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -760,6 +795,13 @@ SELECT Ma, Ten, Pass, PhanQuyen FROM [User] WHERE (Ma = @Ma)</CommandText>
                 </xs:simpleType>
               </xs:element>
               <xs:element name="Gia" msprop:Generator_ColumnVarNameInTable="columnGia" msprop:Generator_ColumnPropNameInRow="Gia" msprop:Generator_ColumnPropNameInTable="GiaColumn" msprop:Generator_UserColumnName="Gia" type="xs:int" minOccurs="0" />
+              <xs:element name="LoaiMonAn" msprop:Generator_ColumnVarNameInTable="columnLoaiMonAn" msprop:Generator_ColumnPropNameInRow="LoaiMonAn" msprop:Generator_ColumnPropNameInTable="LoaiMonAnColumn" msprop:Generator_UserColumnName="LoaiMonAn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -785,39 +827,15 @@ SELECT Ma, Ten, Pass, PhanQuyen FROM [User] WHERE (Ma = @Ma)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="User" msprop:Generator_TableClassName="UserDataTable" msprop:Generator_TableVarName="tableUser" msprop:Generator_TablePropName="User" msprop:Generator_RowDeletingName="UserRowDeleting" msprop:Generator_RowChangingName="UserRowChanging" msprop:Generator_RowEvHandlerName="UserRowChangeEventHandler" msprop:Generator_RowDeletedName="UserRowDeleted" msprop:Generator_UserTableName="User" msprop:Generator_RowChangedName="UserRowChanged" msprop:Generator_RowEvArgName="UserRowChangeEvent" msprop:Generator_RowClassName="UserRow">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Ma" msprop:Generator_ColumnVarNameInTable="columnMa" msprop:Generator_ColumnPropNameInRow="Ma" msprop:Generator_ColumnPropNameInTable="MaColumn" msprop:Generator_UserColumnName="Ma">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="10" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Ten" msprop:Generator_ColumnVarNameInTable="columnTen" msprop:Generator_ColumnPropNameInRow="Ten" msprop:Generator_ColumnPropNameInTable="TenColumn" msprop:Generator_UserColumnName="Ten" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Pass" msprop:Generator_ColumnVarNameInTable="columnPass" msprop:Generator_ColumnPropNameInRow="Pass" msprop:Generator_ColumnPropNameInTable="PassColumn" msprop:Generator_UserColumnName="Pass" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="10" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="PhanQuyen" msprop:Generator_ColumnVarNameInTable="columnPhanQuyen" msprop:Generator_ColumnPropNameInRow="PhanQuyen" msprop:Generator_ColumnPropNameInTable="PhanQuyenColumn" msprop:Generator_UserColumnName="PhanQuyen" type="xs:int" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Ban" />
       <xs:field xpath="mstns:Tenban" />
+    </xs:unique>
+    <xs:unique name="User_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:User" />
+      <xs:field xpath="mstns:Ma" />
     </xs:unique>
     <xs:unique name="BanDat_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:BanDat" />
@@ -847,25 +865,21 @@ SELECT Ma, Ten, Pass, PhanQuyen FROM [User] WHERE (Ma = @Ma)</CommandText>
       <xs:selector xpath=".//mstns:PhieuOrder" />
       <xs:field xpath="mstns:MaPOD" />
     </xs:unique>
-    <xs:unique name="User_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:User" />
-      <xs:field xpath="mstns:Ma" />
-    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
       <msdata:Relationship name="FK_Ban_BanDat" msdata:parent="BanDat" msdata:child="Ban" msdata:parentkey="Tenban" msdata:childkey="Tenban" msprop:Generator_UserChildTable="Ban" msprop:Generator_ChildPropName="GetBanRows" msprop:Generator_UserRelationName="FK_Ban_BanDat" msprop:Generator_RelationVarName="relationFK_Ban_BanDat" msprop:Generator_UserParentTable="BanDat" msprop:Generator_ParentPropName="BanDatRow" />
       <msdata:Relationship name="FK_BanDat_KhachHang" msdata:parent="KhachHang" msdata:child="BanDat" msdata:parentkey="MaKH" msdata:childkey="SDT" msprop:Generator_UserChildTable="BanDat" msprop:Generator_ChildPropName="GetBanDatRows" msprop:Generator_UserRelationName="FK_BanDat_KhachHang" msprop:Generator_RelationVarName="relationFK_BanDat_KhachHang" msprop:Generator_UserParentTable="KhachHang" msprop:Generator_ParentPropName="KhachHangRow" />
-      <msdata:Relationship name="FK_BanDat_NhanVien1" msdata:parent="User" msdata:child="BanDat" msdata:parentkey="Ma" msdata:childkey="MaNV" msprop:Generator_UserChildTable="BanDat" msprop:Generator_ChildPropName="GetBanDatRows" msprop:Generator_UserRelationName="FK_BanDat_NhanVien1" msprop:Generator_RelationVarName="relationFK_BanDat_NhanVien1" msprop:Generator_UserParentTable="User" msprop:Generator_ParentPropName="UserRow" />
+      <msdata:Relationship name="FK_BanDat_NhanVien1" msdata:parent="User" msdata:child="BanDat" msdata:parentkey="Ma" msdata:childkey="MaNV" msprop:Generator_UserChildTable="BanDat" msprop:Generator_ChildPropName="GetBanDatRows" msprop:Generator_UserRelationName="FK_BanDat_NhanVien1" msprop:Generator_ParentPropName="UserRow" msprop:Generator_RelationVarName="relationFK_BanDat_NhanVien1" msprop:Generator_UserParentTable="User" />
       <msdata:Relationship name="FK_CTHD_PhieuOrder" msdata:parent="PhieuOrder" msdata:child="CTHD" msdata:parentkey="MaPOD" msdata:childkey="MaPOD" msprop:Generator_UserChildTable="CTHD" msprop:Generator_ChildPropName="GetCTHDRows" msprop:Generator_UserRelationName="FK_CTHD_PhieuOrder" msprop:Generator_RelationVarName="relationFK_CTHD_PhieuOrder" msprop:Generator_UserParentTable="PhieuOrder" msprop:Generator_ParentPropName="PhieuOrderRow" />
       <msdata:Relationship name="FK_CTPOD_MonAn" msdata:parent="MonAn" msdata:child="CTPOD" msdata:parentkey="MaMon" msdata:childkey="MaMon" msprop:Generator_UserChildTable="CTPOD" msprop:Generator_ChildPropName="GetCTPODRows" msprop:Generator_UserRelationName="FK_CTPOD_MonAn" msprop:Generator_RelationVarName="relationFK_CTPOD_MonAn" msprop:Generator_UserParentTable="MonAn" msprop:Generator_ParentPropName="MonAnRow" />
       <msdata:Relationship name="FK_CTPOD_PhieuOrder" msdata:parent="PhieuOrder" msdata:child="CTPOD" msdata:parentkey="MaPOD" msdata:childkey="MaPOD" msprop:Generator_UserChildTable="CTPOD" msprop:Generator_ChildPropName="GetCTPODRows" msprop:Generator_UserRelationName="FK_CTPOD_PhieuOrder" msprop:Generator_RelationVarName="relationFK_CTPOD_PhieuOrder" msprop:Generator_UserParentTable="PhieuOrder" msprop:Generator_ParentPropName="PhieuOrderRow" />
       <msdata:Relationship name="FK_HoaDon_Ban" msdata:parent="Ban" msdata:child="HoaDon" msdata:parentkey="Tenban" msdata:childkey="TenBan" msprop:Generator_UserChildTable="HoaDon" msprop:Generator_ChildPropName="GetHoaDonRows" msprop:Generator_UserRelationName="FK_HoaDon_Ban" msprop:Generator_ParentPropName="BanRow" msprop:Generator_RelationVarName="relationFK_HoaDon_Ban" msprop:Generator_UserParentTable="Ban" />
       <msdata:Relationship name="FK_HoaDon_CTHĐ" msdata:parent="CTHD" msdata:child="HoaDon" msdata:parentkey="MaHD" msdata:childkey="MaHD" msprop:Generator_UserChildTable="HoaDon" msprop:Generator_ChildPropName="GetHoaDonRows" msprop:Generator_UserRelationName="FK_HoaDon_CTHĐ" msprop:Generator_ParentPropName="CTHDRow" msprop:Generator_RelationVarName="relationFK_HoaDon_CTHĐ" msprop:Generator_UserParentTable="CTHD" />
       <msdata:Relationship name="FK_HoaDon_KhachHang" msdata:parent="KhachHang" msdata:child="HoaDon" msdata:parentkey="MaKH" msdata:childkey="MaKH" msprop:Generator_UserChildTable="HoaDon" msprop:Generator_ChildPropName="GetHoaDonRows" msprop:Generator_UserRelationName="FK_HoaDon_KhachHang" msprop:Generator_RelationVarName="relationFK_HoaDon_KhachHang" msprop:Generator_UserParentTable="KhachHang" msprop:Generator_ParentPropName="KhachHangRow" />
-      <msdata:Relationship name="FK_HoaDon_NhanVien" msdata:parent="User" msdata:child="HoaDon" msdata:parentkey="Ma" msdata:childkey="MaNV" msprop:Generator_UserChildTable="HoaDon" msprop:Generator_ChildPropName="GetHoaDonRows" msprop:Generator_UserRelationName="FK_HoaDon_NhanVien" msprop:Generator_RelationVarName="relationFK_HoaDon_NhanVien" msprop:Generator_UserParentTable="User" msprop:Generator_ParentPropName="UserRow" />
+      <msdata:Relationship name="FK_HoaDon_NhanVien" msdata:parent="User" msdata:child="HoaDon" msdata:parentkey="Ma" msdata:childkey="MaNV" msprop:Generator_UserChildTable="HoaDon" msprop:Generator_ChildPropName="GetHoaDonRows" msprop:Generator_UserRelationName="FK_HoaDon_NhanVien" msprop:Generator_ParentPropName="UserRow" msprop:Generator_RelationVarName="relationFK_HoaDon_NhanVien" msprop:Generator_UserParentTable="User" />
       <msdata:Relationship name="FK_PhieuOrder_Ban" msdata:parent="Ban" msdata:child="PhieuOrder" msdata:parentkey="Tenban" msdata:childkey="TenBan" msprop:Generator_UserChildTable="PhieuOrder" msprop:Generator_ChildPropName="GetPhieuOrderRows" msprop:Generator_UserRelationName="FK_PhieuOrder_Ban" msprop:Generator_ParentPropName="BanRow" msprop:Generator_RelationVarName="relationFK_PhieuOrder_Ban" msprop:Generator_UserParentTable="Ban" />
-      <msdata:Relationship name="FK_PhieuOrder_NhanVien" msdata:parent="User" msdata:child="PhieuOrder" msdata:parentkey="Ma" msdata:childkey="MaNV" msprop:Generator_UserChildTable="PhieuOrder" msprop:Generator_ChildPropName="GetPhieuOrderRows" msprop:Generator_UserRelationName="FK_PhieuOrder_NhanVien" msprop:Generator_RelationVarName="relationFK_PhieuOrder_NhanVien" msprop:Generator_UserParentTable="User" msprop:Generator_ParentPropName="UserRow" />
+      <msdata:Relationship name="FK_PhieuOrder_NhanVien" msdata:parent="User" msdata:child="PhieuOrder" msdata:parentkey="Ma" msdata:childkey="MaNV" msprop:Generator_UserChildTable="PhieuOrder" msprop:Generator_ChildPropName="GetPhieuOrderRows" msprop:Generator_UserRelationName="FK_PhieuOrder_NhanVien" msprop:Generator_ParentPropName="UserRow" msprop:Generator_RelationVarName="relationFK_PhieuOrder_NhanVien" msprop:Generator_UserParentTable="User" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

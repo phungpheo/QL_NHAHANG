@@ -44,5 +44,16 @@ namespace QL_NhaHang.Properties {
                 return ((string)(this["QL_NHAHANGConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PHUNGPHEO\\SQLEXPRESS;Initial Catalog=QL_NHAHANG;Integrated Security=T" +
+            "rue")]
+        public string QL_NHAHANGConnectionString1 {
+            get {
+                return ((string)(this["QL_NHAHANGConnectionString1"]));
+            }
+        }
     }
 }
