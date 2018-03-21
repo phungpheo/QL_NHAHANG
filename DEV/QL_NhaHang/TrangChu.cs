@@ -7,16 +7,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QL_NhaHang
 {
     public partial class TrangChu : Form
     {
+        public static string Quyenhan = "";
+        public static string Tenuser = ""; 
+        public static string Mauser = "";
+      
+        
         public TrangChu()
         {
             InitializeComponent();
-        }
 
+            Connect con = new Connect();
+            SqlDataReader read1 = con.ExcuteReader("select Ten from [User] where Ma ='" + Mauser + "' ");
+            while (read1.Read())
+            {
+                Tenuser = read1["Ten"].ToString();
+            }
+
+          //hiển thị tên ng dùng trên title
+            lb_Quyen.Text = Quyenhan+": "+Tenuser+".  Chọn bàn để Order !";
+            lb_Time.Text = DateTime.Now.ToLongTimeString();
+
+
+            if (Quyenhan == "Nhân viên") 
+            {
+                bt_HuyDat.Enabled = false;
+                bt_QuanLy.Enabled = false;
+                bt_ThanhToan.Enabled = false;
+            }
+            if (Quyenhan == "Tổ trưởng")
+            {
+               
+                bt_QuanLy.Enabled = false;
+            }
+        }
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -35,10 +64,12 @@ namespace QL_NhaHang
 
         private void bt_QuanLy_Click(object sender, EventArgs e)
         {
-           /* InitializeComponent();
-            QL_NhaHang.View.uctQL uc = new View.uctQL();
-            this.Controls.Add(uc);
-            */
+            QuanLy ql = new QuanLy();
+            this.Hide();
+            ql.Show();
+
+            /*if (quyen == "1" || quyen == "2")
+                MessageBox.Show("Bạn không thực hiện được thao tác này */
         }
 
         private void bt_DangXuat_Click(object sender, EventArgs e)
@@ -194,9 +225,19 @@ namespace QL_NhaHang
 
         private void bt_DangXuat_Click_1(object sender, EventArgs e)
         {
-            DangNhap dn = new DangNhap();
-            this.Hide();
-            dn.Show();
+            DialogResult tb = MessageBox.Show("Mầy chắc chưa?", "thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if(tb == DialogResult.OK)
+            {
+                this.Hide();
+                DangNhap dn = new DangNhap();
+                this.Hide();
+                dn.ShowDialog();
+            }
+        }
+
+        private void panelNameUser_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

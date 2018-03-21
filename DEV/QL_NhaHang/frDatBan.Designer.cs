@@ -213,6 +213,7 @@
             this.bt_Huy.Size = new System.Drawing.Size(92, 77);
             this.bt_Huy.TabIndex = 44;
             this.bt_Huy.UseVisualStyleBackColor = false;
+            this.bt_Huy.Click += new System.EventHandler(this.bt_Huy_Click);
             // 
             // comboBox2
             // 

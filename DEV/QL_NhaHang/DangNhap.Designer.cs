@@ -35,7 +35,6 @@
             this.tb_MK = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.bt_Thoat = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -103,23 +102,12 @@
             this.bt_Thoat.UseVisualStyleBackColor = true;
             this.bt_Thoat.Click += new System.EventHandler(this.bt_Thoat_Click);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(445, 318);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Đăng Ký";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(888, 482);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.bt_Thoat);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tb_MK);
@@ -144,7 +132,6 @@
         private System.Windows.Forms.TextBox tb_MK;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button bt_Thoat;
-        private System.Windows.Forms.Button button3;
     }
 }
 

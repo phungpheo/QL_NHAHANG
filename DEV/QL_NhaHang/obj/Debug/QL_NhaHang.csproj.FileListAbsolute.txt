@@ -36,3 +36,5 @@ F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.Properties.Resour
 F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.csproj.GenerateResource.Cache
 F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\bin\Debug\QL_NhaHang.exe
 F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\bin\Debug\QL_NhaHang.pdb
+F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.QuanLy.resources
+F:\School\Kì 6\QL_NHAHANG\DEV\QL_NhaHang\obj\Debug\QL_NhaHang.UserCtrl.resources

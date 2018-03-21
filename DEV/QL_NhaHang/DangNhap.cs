@@ -13,6 +13,20 @@ namespace QL_NhaHang
 {
     public partial class DangNhap : Form
     {
+        public static string QuyenHan = "";
+        public static string TenUser = "";
+        public static string MatKhau = "";
+        public DataTable LayQuyen(string id)
+        {
+            Connect con = new Connect();
+            SqlDataReader read1 = con.ExcuteReader("select PhanQuyen from [User] where Ma ='" + id + "' ");
+            while (read1.Read())
+            {
+                QuyenHan = read1["PhanQuyen"].ToString();
+            }
+            return null;
+        }
+
         public DangNhap()
         {
             InitializeComponent();
@@ -35,26 +49,25 @@ namespace QL_NhaHang
             string pass = tb_MK.Text.Trim();
             SqlDataReader reader =cn.ExcuteReader("select Ma, Pass from [User] where Ma = '"+ user + "' and Pass = '" + pass + "' ");
 
+            LayQuyen(tb_MaDN.Text); //gọi hàm lấy quyền
+     
+            TrangChu.Quyenhan = QuyenHan;// truyền quyền hạn đến trang chủ
+            TrangChu.Tenuser = TenUser;
+            TrangChu.Mauser = user;
             if (reader.Read() == true)
             {
                 this.Hide();
-                TrangChu TrangChu =new TrangChu();
-                TrangChu.ShowDialog();
+                TrangChu Trangchu =new TrangChu();
+                Trangchu.ShowDialog();
             }
             else 
             {
-                MessageBox.Show("Your username or password is not correct!");
+                MessageBox.Show("Mã đăng nhập hoặc mật khẩu của bạn không đúng!");
                 tb_MaDN.Clear();
                 tb_MK.Clear();
             }
 
-            /*if ((tb_MaDN.Text == "1234") && (tb_MaDN.Text == "1234"))
-            {
-                TrangChu TrangChu =new TrangChu();
-                this.Hide();
-                TrangChu.Show();
-
-            }*/
+  
         }
 
         private void bt_Thoat_Click(object sender, EventArgs e)

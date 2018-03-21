@@ -21,5 +21,12 @@ namespace QL_NhaHang
         {
 
         }
+
+        private void bt_Huy_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();
+          
+        }
     }
 }
