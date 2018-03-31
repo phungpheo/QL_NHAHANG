@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace QL_NhaHang
+namespace QL_NhaHang    
 {
     public partial class TrangChu : Form
     {
@@ -23,7 +23,7 @@ namespace QL_NhaHang
             InitializeComponent();
 
             Connect con = new Connect();
-            SqlDataReader read1 = con.ExcuteReader("select Ten from [User] where Ma ='" + Mauser + "' ");
+            SqlDataReader read1 = con.ExcuteReader("select Ten from NguoiDung where Ma ='" + Mauser + "' ");
             while (read1.Read())
             {
                 Tenuser = read1["Ten"].ToString();
@@ -36,7 +36,6 @@ namespace QL_NhaHang
 
             if (Quyenhan == "Nhân viên") 
             {
-                bt_HuyDat.Enabled = false;
                 bt_QuanLy.Enabled = false;
                 bt_ThanhToan.Enabled = false;
             }
@@ -217,11 +216,6 @@ namespace QL_NhaHang
             od.Show();
         }
 
-        private void bt_TachBan_Click(object sender, EventArgs e)
-        {
-            frDatBan db = new frDatBan();
-            db.Show();
-        }
 
         private void bt_DangXuat_Click_1(object sender, EventArgs e)
         {
@@ -235,9 +229,32 @@ namespace QL_NhaHang
             }
         }
 
+     
+
+        private void bt_ThanhToan_Click(object sender, EventArgs e)
+        {
+            ThanhToan tt = new ThanhToan();
+            tt.Show();
+        }
+
+        private void bt_HuyDat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_DatBan_Click(object sender, EventArgs e)
+        {       
+            frDatBan db = new frDatBan();
+            db.Show();
+        
+        }
+
         private void panelNameUser_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+     
+      
     }
 }

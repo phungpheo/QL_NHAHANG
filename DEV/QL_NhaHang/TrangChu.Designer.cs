@@ -31,13 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
             this.bt_ThanhToan = new System.Windows.Forms.Button();
-            this.bt_DatBan = new System.Windows.Forms.Button();
-            this.bt_HuyDat = new System.Windows.Forms.Button();
             this.bt_DangXuat = new System.Windows.Forms.Button();
-            this.bt_Thoat = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panelNameUser = new System.Windows.Forms.Panel();
             this.bt_QuanLy = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.A1 = new System.Windows.Forms.Button();
@@ -60,55 +56,29 @@
             this.A5 = new System.Windows.Forms.Button();
             this.A2 = new System.Windows.Forms.Button();
             this.A3 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_DatBan = new System.Windows.Forms.Button();
             this.lb_TenUser = new System.Windows.Forms.Label();
             this.lb_Quyen = new System.Windows.Forms.Label();
             this.lb_Time = new System.Windows.Forms.Label();
-            this.panelNameUser.SuspendLayout();
+            this.panelNameUser = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
+            this.panelNameUser.SuspendLayout();
             this.SuspendLayout();
             // 
             // bt_ThanhToan
             // 
             this.bt_ThanhToan.AutoSize = true;
-            this.bt_ThanhToan.BackColor = System.Drawing.Color.YellowGreen;
+            this.bt_ThanhToan.BackColor = System.Drawing.Color.Lime;
             this.bt_ThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_ThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_ThanhToan.Location = new System.Drawing.Point(976, 415);
+            this.bt_ThanhToan.Location = new System.Drawing.Point(974, 347);
             this.bt_ThanhToan.Name = "bt_ThanhToan";
             this.bt_ThanhToan.Size = new System.Drawing.Size(114, 75);
             this.bt_ThanhToan.TabIndex = 8;
             this.bt_ThanhToan.Text = "Thanh Toán";
             this.bt_ThanhToan.UseVisualStyleBackColor = false;
-            // 
-            // bt_DatBan
-            // 
-            this.bt_DatBan.AutoSize = true;
-            this.bt_DatBan.BackColor = System.Drawing.Color.Lime;
-            this.bt_DatBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_DatBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_DatBan.Location = new System.Drawing.Point(841, 321);
-            this.bt_DatBan.Name = "bt_DatBan";
-            this.bt_DatBan.Size = new System.Drawing.Size(114, 75);
-            this.bt_DatBan.TabIndex = 7;
-            this.bt_DatBan.Text = "Đặt Bàn";
-            this.bt_DatBan.UseVisualStyleBackColor = false;
-            this.bt_DatBan.Click += new System.EventHandler(this.bt_TachBan_Click);
-            // 
-            // bt_HuyDat
-            // 
-            this.bt_HuyDat.AutoSize = true;
-            this.bt_HuyDat.BackColor = System.Drawing.Color.Lime;
-            this.bt_HuyDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_HuyDat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_HuyDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_HuyDat.ImageIndex = 16;
-            this.bt_HuyDat.Location = new System.Drawing.Point(976, 321);
-            this.bt_HuyDat.Name = "bt_HuyDat";
-            this.bt_HuyDat.Size = new System.Drawing.Size(114, 75);
-            this.bt_HuyDat.TabIndex = 6;
-            this.bt_HuyDat.Text = "Hủy Bàn Đặt";
-            this.bt_HuyDat.UseVisualStyleBackColor = false;
+            this.bt_ThanhToan.Click += new System.EventHandler(this.bt_ThanhToan_Click);
             // 
             // bt_DangXuat
             // 
@@ -117,28 +87,13 @@
             this.bt_DangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_DangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_DangXuat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_DangXuat.Location = new System.Drawing.Point(841, 515);
+            this.bt_DangXuat.Location = new System.Drawing.Point(974, 462);
             this.bt_DangXuat.Name = "bt_DangXuat";
             this.bt_DangXuat.Size = new System.Drawing.Size(114, 75);
             this.bt_DangXuat.TabIndex = 5;
             this.bt_DangXuat.Text = "Đăng Xuất";
             this.bt_DangXuat.UseVisualStyleBackColor = false;
             this.bt_DangXuat.Click += new System.EventHandler(this.bt_DangXuat_Click_1);
-            // 
-            // bt_Thoat
-            // 
-            this.bt_Thoat.AutoSize = true;
-            this.bt_Thoat.BackColor = System.Drawing.Color.Red;
-            this.bt_Thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Thoat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_Thoat.Location = new System.Drawing.Point(976, 515);
-            this.bt_Thoat.Name = "bt_Thoat";
-            this.bt_Thoat.Size = new System.Drawing.Size(114, 75);
-            this.bt_Thoat.TabIndex = 11;
-            this.bt_Thoat.Text = "Thoát";
-            this.bt_Thoat.UseVisualStyleBackColor = false;
-            this.bt_Thoat.Click += new System.EventHandler(this.button26_Click);
             // 
             // imageList1
             // 
@@ -155,26 +110,13 @@
             this.imageList1.Images.SetKeyName(8, "nhanvien.png");
             this.imageList1.Images.SetKeyName(9, "round-border-menu-bar-128.png");
             // 
-            // panelNameUser
-            // 
-            this.panelNameUser.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panelNameUser.Controls.Add(this.lb_Time);
-            this.panelNameUser.Controls.Add(this.lb_Quyen);
-            this.panelNameUser.Controls.Add(this.lb_TenUser);
-            this.panelNameUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelNameUser.Location = new System.Drawing.Point(0, 0);
-            this.panelNameUser.Name = "panelNameUser";
-            this.panelNameUser.Size = new System.Drawing.Size(1100, 45);
-            this.panelNameUser.TabIndex = 13;
-            this.panelNameUser.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNameUser_Paint);
-            // 
             // bt_QuanLy
             // 
             this.bt_QuanLy.AutoSize = true;
             this.bt_QuanLy.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.bt_QuanLy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_QuanLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_QuanLy.Location = new System.Drawing.Point(841, 415);
+            this.bt_QuanLy.Location = new System.Drawing.Point(833, 462);
             this.bt_QuanLy.Name = "bt_QuanLy";
             this.bt_QuanLy.Size = new System.Drawing.Size(114, 75);
             this.bt_QuanLy.TabIndex = 10;
@@ -532,14 +474,19 @@
             this.A3.UseVisualStyleBackColor = false;
             this.A3.Click += new System.EventHandler(this.A3_Click);
             // 
-            // panel1
+            // bt_DatBan
             // 
-            this.panel1.AutoSize = true;
-            this.panel1.BackgroundImage = global::QL_NhaHang.Properties.Resources.product_l296;
-            this.panel1.Location = new System.Drawing.Point(833, 51);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(257, 246);
-            this.panel1.TabIndex = 12;
+            this.bt_DatBan.AutoSize = true;
+            this.bt_DatBan.BackColor = System.Drawing.Color.Lime;
+            this.bt_DatBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_DatBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_DatBan.Location = new System.Drawing.Point(833, 347);
+            this.bt_DatBan.Name = "bt_DatBan";
+            this.bt_DatBan.Size = new System.Drawing.Size(114, 75);
+            this.bt_DatBan.TabIndex = 14;
+            this.bt_DatBan.Text = "Đặt Bàn";
+            this.bt_DatBan.UseVisualStyleBackColor = false;
+            this.bt_DatBan.Click += new System.EventHandler(this.bt_DatBan_Click);
             // 
             // lb_TenUser
             // 
@@ -566,10 +513,32 @@
             this.lb_Time.AutoSize = true;
             this.lb_Time.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Time.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lb_Time.Location = new System.Drawing.Point(936, 9);
+            this.lb_Time.Location = new System.Drawing.Point(954, 9);
             this.lb_Time.Name = "lb_Time";
             this.lb_Time.Size = new System.Drawing.Size(0, 24);
             this.lb_Time.TabIndex = 2;
+            // 
+            // panelNameUser
+            // 
+            this.panelNameUser.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panelNameUser.Controls.Add(this.lb_Time);
+            this.panelNameUser.Controls.Add(this.lb_Quyen);
+            this.panelNameUser.Controls.Add(this.lb_TenUser);
+            this.panelNameUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelNameUser.Location = new System.Drawing.Point(0, 0);
+            this.panelNameUser.Name = "panelNameUser";
+            this.panelNameUser.Size = new System.Drawing.Size(1100, 45);
+            this.panelNameUser.TabIndex = 13;
+            this.panelNameUser.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNameUser_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.AutoSize = true;
+            this.panel1.BackgroundImage = global::QL_NhaHang.Properties.Resources.product_l296;
+            this.panel1.Location = new System.Drawing.Point(833, 51);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(257, 246);
+            this.panel1.TabIndex = 12;
             // 
             // TrangChu
             // 
@@ -577,21 +546,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1100, 624);
+            this.Controls.Add(this.bt_DatBan);
             this.Controls.Add(this.bt_QuanLy);
             this.Controls.Add(this.panelNameUser);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.bt_Thoat);
             this.Controls.Add(this.bt_ThanhToan);
-            this.Controls.Add(this.bt_DatBan);
-            this.Controls.Add(this.bt_HuyDat);
             this.Controls.Add(this.bt_DangXuat);
             this.Controls.Add(this.groupBox1);
             this.Name = "TrangChu";
             this.ShowIcon = false;
             this.Text = "Quản lý nhà hàng";
+            this.groupBox1.ResumeLayout(false);
             this.panelNameUser.ResumeLayout(false);
             this.panelNameUser.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -600,14 +567,10 @@
         #endregion
 
         private System.Windows.Forms.Button bt_ThanhToan;
-        private System.Windows.Forms.Button bt_DatBan;
-        private System.Windows.Forms.Button bt_HuyDat;
         private System.Windows.Forms.Button bt_DangXuat;
-        private System.Windows.Forms.Button bt_Thoat;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panelNameUser;
         private System.Windows.Forms.Button bt_QuanLy;
         private System.Windows.Forms.Button A3;
         private System.Windows.Forms.Button A2;
@@ -630,8 +593,10 @@
         private System.Windows.Forms.Button A19;
         private System.Windows.Forms.Button A1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button bt_DatBan;
         private System.Windows.Forms.Label lb_TenUser;
         private System.Windows.Forms.Label lb_Quyen;
         private System.Windows.Forms.Label lb_Time;
+        private System.Windows.Forms.Panel panelNameUser;
     }
 }

@@ -14,6 +14,8 @@ namespace QL_NhaHang
 {
     public partial class Order : Form
     {
+        public static string Quyenhan = "";
+        public static string Tenuser = ""; 
         public Order()
         {
             InitializeComponent();

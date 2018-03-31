@@ -48,6 +48,9 @@
             this.bt_Save = new System.Windows.Forms.Button();
             this.bt_Huy = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lb_Time = new System.Windows.Forms.Label();
+            this.lb_Quyen = new System.Windows.Forms.Label();
+            this.lb_TenUser = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -60,6 +63,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_MonAn)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -269,11 +273,44 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel2.Controls.Add(this.lb_Time);
+            this.panel2.Controls.Add(this.lb_Quyen);
+            this.panel2.Controls.Add(this.lb_TenUser);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1070, 45);
+            this.panel2.Size = new System.Drawing.Size(1069, 45);
             this.panel2.TabIndex = 22;
+            // 
+            // lb_Time
+            // 
+            this.lb_Time.AutoSize = true;
+            this.lb_Time.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Time.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_Time.Location = new System.Drawing.Point(927, 10);
+            this.lb_Time.Name = "lb_Time";
+            this.lb_Time.Size = new System.Drawing.Size(0, 24);
+            this.lb_Time.TabIndex = 5;
+            // 
+            // lb_Quyen
+            // 
+            this.lb_Quyen.AutoSize = true;
+            this.lb_Quyen.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Quyen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_Quyen.Location = new System.Drawing.Point(144, 10);
+            this.lb_Quyen.Name = "lb_Quyen";
+            this.lb_Quyen.Size = new System.Drawing.Size(0, 24);
+            this.lb_Quyen.TabIndex = 4;
+            // 
+            // lb_TenUser
+            // 
+            this.lb_TenUser.AutoSize = true;
+            this.lb_TenUser.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_TenUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_TenUser.Location = new System.Drawing.Point(265, 10);
+            this.lb_TenUser.Name = "lb_TenUser";
+            this.lb_TenUser.Size = new System.Drawing.Size(0, 24);
+            this.lb_TenUser.TabIndex = 3;
             // 
             // button13
             // 
@@ -371,7 +408,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(1070, 624);
+            this.ClientSize = new System.Drawing.Size(1069, 624);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -383,6 +420,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_MonAn)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -427,5 +466,8 @@
         private System.Windows.Forms.ToolStripMenuItem trángMiệngToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label lb_Time;
+        private System.Windows.Forms.Label lb_Quyen;
+        private System.Windows.Forms.Label lb_TenUser;
     }
 }

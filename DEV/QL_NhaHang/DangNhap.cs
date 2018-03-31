@@ -47,13 +47,17 @@ namespace QL_NhaHang
             Connect cn = new Connect();
             string user = tb_MaDN.Text.Trim();
             string pass = tb_MK.Text.Trim();
-            SqlDataReader reader =cn.ExcuteReader("select Ma, Pass from [User] where Ma = '"+ user + "' and Pass = '" + pass + "' ");
+            SqlDataReader reader =cn.ExcuteReader("select Ma, Pass from NguoiDung where Ma = '"+ user + "' and Pass = '" + pass + "' ");
 
             LayQuyen(tb_MaDN.Text); //gọi hàm lấy quyền
      
             TrangChu.Quyenhan = QuyenHan;// truyền quyền hạn đến trang chủ
-            TrangChu.Tenuser = TenUser;
+           // TrangChu.Tenuser = TenUser;
             TrangChu.Mauser = user;
+
+           // Order.Tenuser = TenUser;
+            Order.Quyenhan = QuyenHan;
+
             if (reader.Read() == true)
             {
                 this.Hide();

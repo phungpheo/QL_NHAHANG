@@ -73,6 +73,16 @@ namespace QL_NhaHang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _60577 {
+            get {
+                object obj = ResourceManager.GetObject("60577", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dining_table {
             get {
                 object obj = ResourceManager.GetObject("dining_table", resourceCulture);
@@ -96,6 +106,36 @@ namespace QL_NhaHang.Properties {
         internal static System.Drawing.Bitmap Fxemoji_u274C_svg {
             get {
                 object obj = ResourceManager.GetObject("Fxemoji_u274C.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_left_2_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-left-2-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_left_2_filled_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-left-2-filled-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_left_3_filled_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-left-3-filled-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
